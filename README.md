@@ -135,7 +135,7 @@ Metas esperadas:
 ## Contato e suporte
 
 - Email: contato@carbonesteakhouse.com.br
-- WhatsApp: (85) 99292-2597
+- Telefone: (85) 3121-1614
 
 ## Licenca
 
