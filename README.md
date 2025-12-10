@@ -136,6 +136,7 @@ Metas esperadas:
 
 - Email: contato@carbonesteakhouse.com.br
 - Telefone: (85) 3121-1614
+- (85) 99251-3768
 
 ## Licenca
 
