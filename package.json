@@ -1,0 +1,20 @@
+﻿{
+  "name": "carbone-steakhouse",
+  "version": "1.0.0",
+  "description": "Carbone SteakHouse - Steakhouse Premium em Fortaleza",
+  "scripts": {
+    "start": "live-server . --port=5500",
+    "deploy:vercel": "vercel",
+    "deploy:netlify": "netlify deploy"
+  },
+  "keywords": [
+    "restaurante",
+    "steakhouse",
+    "fortaleza"
+  ],
+  "author": "Otavio Cruz",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

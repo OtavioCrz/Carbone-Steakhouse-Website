@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Carbone SteakHouse | Steakhouse Premium em Fortaleza</title>
+    <meta name="description" content="Carbone SteakHouse: cortes na brasa, adega curada e ambiente autoral em Fortaleza.">
+    <meta name="keywords" content="Carbone SteakHouse, restaurante Fortaleza, steakhouse, carnes nobres, parrilla, vinhos, reservas">
+    <meta name="author" content="Carbone SteakHouse">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Open Graph (Redes Sociais) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carbone SteakHouse | Steakhouse Premium em Fortaleza">
+    <meta property="og:description" content="Carnes na brasa, vinhos premium e ambiente autoral em Fortaleza.">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1eSY4xkA7wrCLbpGEty-DRcngcQS9yUE_">
+    <meta property="og:url" content="https://carbonesteakhouse.com.br">
+    <meta property="og:site_name" content="Carbone SteakHouse">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carbone SteakHouse | Steakhouse Premium">
+    <meta name="twitter:description" content="Carnes na brasa, adega curada e atendimento acolhedor em Fortaleza">
+    <meta name="twitter:image" content="https://drive.google.com/uc?export=view&id=1eSY4xkA7wrCLbpGEty-DRcngcQS9yUE_">
+    <meta name="twitter:site" content="@carbonesteakhouse">
+    
+    <!-- Canonical & Alternate -->
+    <link rel="canonical" href="https://carbonesteakhouse.com.br">
+    <link rel="alternate" hreflang="pt-BR" href="https://carbonesteakhouse.com.br">
+    <link rel="alternate" hreflang="x-default" href="https://carbonesteakhouse.com.br">
+    
+    <!-- Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN (Production-safe) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Carbone SteakHouse",
+      "description": "Steakhouse premium em Fortaleza com cortes na brasa, adega curada e atendimento autoral.",
+      "image": "https://drive.google.com/uc?export=view&id=1eSY4xkA7wrCLbpGEty-DRcngcQS9yUE_",
+      "url": "https://carbonesteakhouse.com.br",
+      "telephone": "+55 85 3121-1614",
+      "priceRange": "R$R$",
+      "servesCuisine": ["Steakhouse", "Carnes", "Brasileira"],
+      "acceptsReservations": "True",
+      "sameAs": [
+        "https://www.instagram.com/carbonesteakhouse/",
+        "https://www.tripadvisor.com.br/Restaurant_Review-g303293-d21406901-Reviews-Carbone_Steakhouse-Fortaleza_State_of_Ceara.html",
+        "https://wa.me/5585992922597"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fortaleza",
+        "addressRegion": "CE",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 
+                        'both-black': '#050505', 
+                        'both-dark-gray': '#0f0f13', 
+                        'both-red': '#B3131B', 
+                        'both-gold': '#C9A24B',
+                        'both-cream': '#F5F1E8'
+                    },
+                    fontFamily: { 
+                        heading: ['Playfair Display', 'serif'], 
+                        body: ['Inter', 'sans-serif'] 
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'fade-in-up': 'fadeInUp 1.2s ease-out',
+                        'fade-in-down': 'fadeInDown 0.8s ease-out',
+                        'pulse-gold': 'pulseGold 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        fadeInUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        fadeInDown: { '0%': { opacity: '0', transform: 'translateY(-20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        pulseGold: { '0%, 100%': { opacity: '1' }, '50%': { opacity: '0.7' } }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS Global & Premium -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/premium.css">
+    
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn-primary { 
+                @apply inline-flex items-center justify-center px-8 py-3 rounded text-sm uppercase tracking-wider font-semibold 
+                bg-both-red text-white hover:bg-red-800 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl; 
+            }
+            .btn-outline-gold { 
+                @apply inline-flex items-center justify-center px-8 py-3 rounded text-sm uppercase tracking-wider font-semibold 
+                border border-both-gold text-both-gold hover:bg-both-gold hover:text-both-black transition-all duration-300 hover:-translate-y-1; 
+            }
+            .btn-ghost-white {
+                @apply inline-flex items-center justify-center px-8 py-3 rounded text-sm uppercase tracking-wider font-semibold 
+                border border-white text-white hover:bg-white hover:text-both-black transition-all duration-300 hover:-translate-y-1;
+            }
+            .section-wrapper { @apply max-w-7xl mx-auto px-6; }
+            .section-title { @apply text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-heading; }
+            .section-subtitle { @apply text-both-gold text-sm md:text-base uppercase tracking-[0.2em] mb-2 block; }
+            .section-desc { @apply text-gray-400 text-lg leading-relaxed; }
+            .card-dark { @apply bg-both-dark-gray border border-white/5 p-8 hover:border-both-gold/30 transition-all duration-300 rounded-lg; }
+            .premium-text { @apply text-white font-heading font-bold tracking-wider; }
+            .text-gradient { @apply bg-gradient-to-r from-both-gold to-yellow-300 bg-clip-text text-transparent; }
+            .nav-link { @apply text-gray-300 hover:text-both-gold transition-colors duration-300; }
+        }
+    </style>
+</head>
+<body class="bg-both-black text-white antialiased font-body">
+    <!-- Header/Nav -->
+    <div id="header-container"></div>
+    
+    <!-- Hero Premium -->
+    <div id="hero-container"></div>
+    
+    <!-- Story Section -->
+    <div id="section-story-container"></div>
+    
+    <!-- Highlights/Sabores -->
+    <div id="section-highlights-container"></div>
+    
+    <!-- Gallery/Ambiente -->
+    <div id="section-gallery-container"></div>
+    
+    <!-- Adega/Vinhos -->
+    <div id="section-adega-container"></div>
+    
+    <!-- Sobre Conceito -->
+    <div id="section-about-container"></div>
+    
+    <!-- Chef & Sommelier -->
+    <div id="section-chef-sommelier-container"></div>
+    
+    <!-- Depoimentos -->
+    <div id="section-depoimentos-container"></div>
+    
+    <!-- Experiências (CTA) -->
+    <div id="section-menu-cta-container"></div>
+    
+    <!-- Mapa (localização) -->
+    <div id="section-mapa-container"></div>
+
+    <!-- Reservas -->
+    <div id="section-reserva-container"></div>
+    
+    <!-- FAQ -->
+    <div id="section-faq-container"></div>
+    
+    <!-- Footer -->
+    <div id="footer-container">
+      <footer class="bg-both-black border-t border-white/10">
+        <div class="section-wrapper py-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 footer-grid">
+            
+            <div class="footer-brand">
+              <h3 class="text-2xl font-heading font-bold text-both-gold mb-4">Carbone SteakHouse</h3>
+              <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                Parrilla aberta, cortes nobres, adega curada e ambiente autoral em Fortaleza.
+              </p>
+              <div class="flex gap-4">
+                <a href="https://www.instagram.com/carbonesteakhouse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-400 hover:text-both-gold">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/></svg>
+                </a>
+                <a href="https://www.tripadvisor.com.br/Restaurant_Review-g303293-d21406901-Reviews-Carbone_Steakhouse-Fortaleza_State_of_Ceara.html" target="_blank" rel="noopener noreferrer" aria-label="TripAdvisor" class="text-gray-400 hover:text-both-gold">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M21.8 8.1l2.2-.7-1.5 2 1 2.3-2.3-.6c-.6 2.2-2.6 3.8-5 3.8-.7 0-1.3-.1-1.9-.3l-1.3 1.7-1.3-1.7c-.6.2-1.2.3-1.9.3-2.4 0-4.4-1.6-5-3.8l-2.3.6 1-2.3-1.5-2 2.2.7C4.8 6 7.2 4.4 10 4.4c1 0 2 .2 2.9.6.9-.4 1.9-.6 2.9-.6 2.8 0 5.2 1.6 6 3.7zM8 14.1c1.3 0 2.3-1.5 2.3-3.4S9.3 7.3 8 7.3s-2.3 1.5-2.3 3.4S6.7 14.1 8 14.1zm8 0c1.3 0 2.3-1.5 2.3-3.4s-1-3.4-2.3-3.4-2.3 1.5-2.3 3.4 1 3.4 2.3 3.4z"/></svg>
+                </a>
+                <a href="https://wa.me/5585992922597" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-gray-400 hover:text-both-gold">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.935 1.188l-.36.214-3.75-.985.992 3.622-.235.374a9.86 9.86 0 1013.505-13.048zM12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z"/></svg>
+                </a>
+              </div>
+            </div> 
+            <nav class="footer-nav" aria-label="Navegacao do site">
+              <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Navegação</h4>
+              <ul class="space-y-3">
+                <li><a href="#sabores" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm">Sabores</a></li>
+                <li><a href="#adega" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm">Adega</a></li>
+                <li><a href="#ambiente" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm">Ambiente</a></li>
+                <li><a href="#menus" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm">Menus</a></li>
+                <li><a href="#contato" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm">Reservas</a></li>
+              </ul>
+            </nav>
+
+            <div class="footer-contact">
+              <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Informações</h4>
+              <ul class="space-y-3">
+                <li><a href="tel:+558531211614" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm flex items-center gap-2"> (85) 3121-1614</a></li>
+                <li><a href="mailto:contato@carbonesteakhouse.com.br" class="text-gray-400 hover:text-both-gold transition-colors duration-300 text-sm flex items-center gap-2">contato@carbonesteakhouse.com.br</a></li>
+                <li class="text-gray-400 text-sm flex items-center gap-2">Fortaleza, CE</li>
+              </ul>
+            </div>
+
+          </div> 
+        </div> 
+        <div class="border-t border-white/10"></div>
+
+        <div class="section-wrapper py-8">
+          <div class="pt-8 text-center">
+            <p class="text-gray-500 text-sm">
+              Todos os direitos reservados © 2025 Carbone SteakHouse |
+              <a href="https://otaviocruz.dev" target="_blank" rel="noopener noreferrer" class="text-both-gold hover:text-yellow-300">Desenvolvido por Otavio Cruz</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <!-- Performance: Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('js/service-worker.js').catch(err => {
+                    console.log('Service Worker registration failed (development):', err);
+                });
+            });
+        }
+    </script>
+    
+    <script src="js/global.js" defer></script>
+    <script src="js/lazy-load.js" defer></script>
+  
+    </body>
+</html>

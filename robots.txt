@@ -1,0 +1,16 @@
+# Crawl directives
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://carbonesteakhouse.com.br/sitemap.xml
+
+# Crawl pacing
+Crawl-delay: 1
+
+# Googlebot override
+User-agent: Googlebot
+Crawl-delay: 0
+Sitemap: https://carbonesteakhouse.com.br/sitemap.xml

@@ -1,0 +1,73 @@
+<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-gradient-to-b from-black/90 to-black/40 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3 text-white hover:text-both-gold transition-colors duration-300">
+            <img src="https://static.ifood-static.com.br/image/upload/t_medium/logosgde/062d7c7e-aa71-4d09-ab44-ff64ab2edb2f/202102081508_rEIY_i.png" alt="Carbone SteakHouse" class="h-10 w-10 rounded-full object-cover bg-white/10 border border-white/10">
+            <span class="text-xl md:text-2xl font-heading font-bold tracking-widest">Carbone</span>
+        </a>
+        
+        <nav class="hidden lg:flex items-center gap-6">
+            <a href="#sabores" class="nav-link text-sm uppercase tracking-wider">Cortes</a>
+            <a href="#ambiente" class="nav-link text-sm uppercase tracking-wider">Ambiente</a>
+            <a href="#adega" class="nav-link text-sm uppercase tracking-wider">Adega</a>
+            <a href="#menus" class="nav-link text-sm uppercase tracking-wider">Menus</a>
+            <a href="#contato" class="nav-link text-sm uppercase tracking-wider">Contato</a>
+
+            <div class="relative">
+                <button id="desktop-more-btn" aria-expanded="false" aria-haspopup="true" aria-controls="desktop-more" class="nav-link text-sm uppercase tracking-wider flex items-center gap-2">
+                    Mais
+                    <svg id="desktop-more-icon" class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div id="desktop-more" role="menu" aria-labelledby="desktop-more-btn" class="absolute right-0 mt-2 w-56 bg-both-dark-gray border border-white/5 rounded-lg shadow-lg z-50 opacity-0 scale-95 transform origin-top-right transition-all duration-200 invisible pointer-events-none">
+                    <a role="menuitem" tabindex="-1" href="#sobre" class="block px-4 py-3 text-sm text-gray-300 hover:bg-both-gold/10 hover:text-Carbone-cream">Sobre</a>
+                    <a role="menuitem" tabindex="-1" href="#equipe" class="block px-4 py-3 text-sm text-gray-300 hover:bg-both-gold/10 hover:text-Carbone-cream">Equipe</a>
+                    <a role="menuitem" tabindex="-1" href="#depoimentos" class="block px-4 py-3 text-sm text-gray-300 hover:bg-both-gold/10 hover:text-Carbone-cream">Avaliacoes</a>
+                    <a role="menuitem" tabindex="-1" href="#experiencias" class="block px-4 py-3 text-sm text-gray-300 hover:bg-both-gold/10 hover:text-Carbone-cream">Experiencias</a>
+                    <a role="menuitem" tabindex="-1" href="#localizacao" class="block px-4 py-3 text-sm text-gray-300 hover:bg-both-gold/10 hover:text-Carbone-cream">Localizacao</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <a href="#contato" class="hidden md:flex btn-primary px-6 py-2 text-xs">Reservar</a>
+            
+            <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-both-gold transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <nav id="mobile-menu" class="hidden lg:hidden bg-black/95 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-6 space-y-4">
+            <a href="#sabores" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Cortes</a>
+            <a href="#ambiente" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Ambiente</a>
+            <a href="#adega" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Adega</a>
+            <a href="#menus" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Menus</a>
+            <a href="#contato" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Contato</a>
+
+            <button id="mobile-more-btn" aria-label="Mais opcoes" class="w-full text-left flex items-center justify-between text-sm text-gray-300 hover:text-both-gold transition-colors py-2">
+                <span class="sr-only">Mais</span>
+                <svg id="mobile-more-icon" class="w-5 h-5 text-gray-300 transition-transform duration-200" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="12" r="2"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <circle cx="19" cy="12" r="2"/>
+                </svg>
+            </button>
+
+            <div id="mobile-more" class="hidden space-y-2">
+                <a href="#sobre" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Sobre</a>
+                <a href="#equipe" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Equipe</a>
+                <a href="#experiencias" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Experiencias</a>
+                <a href="#depoimentos" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Avaliacoes</a>
+                <a href="#localizacao" class="block text-sm text-gray-300 hover:text-both-gold transition-colors">Localizacao</a>
+            </div>
+
+            <a href="#contato" class="block btn-primary w-full text-center py-2 mt-4">Reservar</a>
+        </div>
+    </nav>
+</header>
+

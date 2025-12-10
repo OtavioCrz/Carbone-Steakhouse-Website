@@ -1,0 +1,222 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseGold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* ========== UTILITIES ========== */
+.fade-in-up { animation: fadeInUp 1.2s ease-out; }
+.fade-in-down { animation: fadeInDown 0.8s ease-out; }
+.slide-in-right { animation: slideInRight 0.8s ease-out; }
+.animate-pulse-gold { animation: pulseGold 3s ease-in-out infinite; }
+
+/* ========== GLASS MORPHISM ========== */
+.glass {
+  background: rgba(15, 15, 19, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(201, 162, 75, 0.1);
+}
+
+.glass-gold {
+  background: rgba(201, 162, 75, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(201, 162, 75, 0.2);
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  background: linear-gradient(135deg, #ffffff 0%, #c9a24b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== LINKS ========== */
+a:not([class]) {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:not([class])::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C9A24B;
+  transition: width 0.3s ease;
+}
+
+a:not([class]):hover::after {
+  width: 100%;
+}
+
+a:not([class]):hover {
+  color: #C9A24B;
+}
+
+/* ========== FORM STYLING ========== */
+input, textarea, select {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #C9A24B !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 3px rgba(201, 162, 75, 0.1), 0 0 20px rgba(201, 162, 75, 0.1);
+}
+
+input::placeholder {
+  color: rgba(156, 163, 175, 0.6);
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A24B;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4b566;
+}
+
+/* ========== SELECTION ========== */
+::selection {
+  background-color: #C9A24B;
+  color: #050505;
+}
+
+::-moz-selection {
+  background-color: #C9A24B;
+  color: #050505;
+}
+
+/* ========== IMAGES ========== */
+img {
+  transition: transform 0.3s ease;
+}
+
+/* ========== BUTTONS ENHANCED ========== */
+button {
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ========== CARDS ========== */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: #C9A24B;
+  box-shadow: 0 20px 40px rgba(201, 162, 75, 0.1);
+}
+
+/* ========== GRADIENT TEXT ========== */
+.text-gradient {
+  background: linear-gradient(135deg, #C9A24B 0%, #FFD700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== UTILITIES ========== */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+.shadow-premium {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+/* ========== ACCESSIBILITY ========== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========== PRINT ========== */
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
