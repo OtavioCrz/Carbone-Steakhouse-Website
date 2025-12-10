@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="flex gap-4">
           <a href="https://www.instagram.com/carbonesteakhouse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-400 hover:text-both-gold">IG</a>
           <a href="https://www.tripadvisor.com.br/Restaurant_Review-g303293-d21406901-Reviews-Carbone_Steakhouse-Fortaleza_State_of_Ceara.html" target="_blank" rel="noopener noreferrer" aria-label="TripAdvisor" class="text-gray-400 hover:text-both-gold">TripAdvisor</a>
-          <a href="https://wa.me/5585992922597" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-gray-400 hover:text-both-gold">WhatsApp</a>
+          <a href="https://wa.me/5585992513768" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-gray-400 hover:text-both-gold">WhatsApp</a>
         </div>
       </div>
       <nav class="footer-nav" aria-label="Navegacao do site">
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="footer-contact">
         <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Informacoes</h4>
         <ul class="space-y-3">
-          <li><a href="tel:+558531211614" class="text-gray-400 hover:text-both-gold text-sm flex items-center gap-2">(85) 3121-1614</a></li>
+          <li><a href="tel:+5585992513768" class="text-gray-400 hover:text-both-gold text-sm flex items-center gap-2">(85) 99251-3768</a></li>
           <li><a href="mailto:contato@carbonesteakhouse.com.br" class="text-gray-400 hover:text-both-gold text-sm flex items-center gap-2">contato@carbonesteakhouse.com.br</a></li>
           <li class="text-gray-400 text-sm flex items-center gap-2">Fortaleza, CE</li>
         </ul>
